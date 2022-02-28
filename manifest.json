@@ -1,0 +1,20 @@
+{
+    "name": "WORDLE TR",
+    "version": "1.0",
+    "description": "WORDLE TR",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.bundle.app/wordle-tr/"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "index.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
